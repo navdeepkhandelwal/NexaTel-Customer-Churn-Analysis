@@ -6,7 +6,7 @@ Customer churn is one of the biggest challenges for telecom companies because lo
 
 This project analyzes customer behavior, service quality, complaints, network performance, billing, and retention campaigns to identify the major drivers of churn and recommend actionable business strategies to improve customer retention.
 
-The project was completed using **Python, SQL concepts, Power BI, and DAX**, covering the complete analytics workflow from data cleaning to executive dashboard reporting.
+The project was completed using **Python, Pandas, Power BI, and DAX**, covering the complete analytics workflow from data cleaning to executive dashboard reporting.
 
 ---
 
@@ -15,10 +15,10 @@ The project was completed using **Python, SQL concepts, Power BI, and DAX**, cov
 - Analyze customer churn and retention trends.
 - Identify high-risk customer segments.
 - Measure revenue at risk due to churn.
-- Analyze complaint handling and service quality.
-- Evaluate network performance across regions.
-- Measure retention campaign effectiveness.
-- Build executive dashboards for business decision making.
+- Analyze customer complaints and support performance.
+- Evaluate network quality across regions.
+- Assess retention campaign effectiveness.
+- Build interactive dashboards for business decision-making.
 
 ---
 
@@ -27,19 +27,26 @@ The project was completed using **Python, SQL concepts, Power BI, and DAX**, cov
 - Python
 - Pandas
 - NumPy
+- Jupyter Notebook
 - Power BI
 - DAX
-- Jupyter Notebook
 
 ---
 
 # 📂 Project Structure
 
-```
+```text
 NexaTel-Customer-Churn-Analysis/
-
 │
 ├── Datasets/
+│
+├── Dashboard_Screenshots/
+│   ├── Executive_Overview.png
+│   ├── Customer_Segment_Analysis.png
+│   ├── Service_Support_Analysis.png
+│   ├── Network_Regional_Analysis.png
+│   ├── Campaign_Revenue_Analysis.png
+│   └── Customer_Segment_Details.png
 │
 ├── Phase1_DataCleaning_Navdeep_Khandelwal.ipynb
 ├── Phase2_EDA_Navdeep_Khandelwal.ipynb
@@ -48,9 +55,7 @@ NexaTel-Customer-Churn-Analysis/
 ├── Phase4_Report_Navdeep_Khandelwal.pdf
 ├── Bonus_Cohort_Analysis_Navdeep_Khandelwal.ipynb
 │
-├── Dashboard Screenshots/
-│
-├── README.md
+└── README.md
 ```
 
 ---
@@ -59,118 +64,127 @@ NexaTel-Customer-Churn-Analysis/
 
 ## 1️⃣ Executive Overview
 
-Provides a high-level business summary including:
+This dashboard provides an overall business summary of customer churn and revenue performance.
 
+**KPIs**
 - Total Revenue
 - Churn Rate
 - Retention Rate
 - Revenue at Risk
+
+**Visuals**
 - Monthly Churn Trend
 - Revenue by Customer Segment
 - Revenue at Risk by Subscription
-- Monthly Revenue Trend
+- Revenue by Billing Month
 
-**Dashboard**
+### Dashboard Preview
 
-![Executive Overview](Executive_Overview.png)
+![Executive Overview](Dashboard_Screenshots/Executive_Overview.png)
 
 ---
 
 ## 2️⃣ Customer & Segment Analysis
 
-Analyzes customer demographics and segmentation.
+This dashboard analyzes customer demographics, tenure, customer segments, and revenue contribution.
 
-Key insights include:
-
-- Customer Segments
+**KPIs**
+- Total Customers
 - ARPU
-- Average Customer Age
+- Average Age
 - Average Tenure
+
+**Visuals**
 - Churn by Tenure Band
 - Churn by Customer Segment
 - ARPU Distribution
-- High Risk Customers
+- Top At-Risk Customers
 
-**Dashboard**
+### Dashboard Preview
 
-![Customer Segment Analysis](Customer_Segment_Analysis.png)
+![Customer & Segment Analysis](Dashboard_Screenshots/Customer_Segment_Analysis.png)
 
 ---
 
 ## 3️⃣ Service & Support Analysis
 
-Evaluates customer support performance.
+This dashboard evaluates complaint management and customer support efficiency.
 
-Includes:
-
+**KPIs**
 - Total Complaints
 - First Contact Resolution (FCR)
+- Unresolved Complaints
 - Average Resolution Time
-- Complaint Severity
-- Complaint Status
-- Complaint Type Analysis
+
+**Visuals**
+- Complaints by Severity
+- Complaints by Status
+- Average Resolution Time by Complaint Type
 - Churn vs Unresolved Complaints
 
-**Dashboard**
+### Dashboard Preview
 
-![Service & Support Analysis](Service_Support_Analysis.png)
+![Service & Support Analysis](Dashboard_Screenshots/Service_Support_Analysis.png)
 
 ---
 
 ## 4️⃣ Network & Regional Analysis
 
-Analyzes network performance and regional trends.
+This dashboard analyzes regional network performance and its relationship with customer churn.
 
-Includes:
-
+**KPIs**
 - Average Download Speed
-- Signal Strength
-- Dropped Call Rate
-- Network Downtime
-- Churn by State
+- Average Signal Strength
+- Average Dropped Call Rate
+- Average Network Downtime
+
+**Visuals**
+- Customer Churn by State
 - Network Quality Map
 - Dropped Call Rate vs Churn
 - Network Downtime by Region
 
-**Dashboard**
+### Dashboard Preview
 
-![Network & Regional Analysis](Network_Regional_Analysis.png)
+![Network & Regional Analysis](Dashboard_Screenshots/Network_Regional_Analysis.png)
 
 ---
 
 ## 5️⃣ Campaigns & Revenue Analysis
 
-Evaluates customer retention campaigns and revenue impact.
+This dashboard evaluates retention campaign performance and revenue protection.
 
-Includes:
-
+**KPIs**
+- Total Campaigns
 - Campaign Success Rate
 - Monthly Recurring Revenue (MRR)
 - Revenue Lost to Churn
-- Campaign Outcomes
-- Campaign Performance by Offer Type
+
+**Visuals**
+- Monthly Recurring Revenue Trend
+- Retention Campaign Outcomes
 - Revenue Lost by Customer Segment
+- Campaign Performance by Offer Type
 
-**Dashboard**
+### Dashboard Preview
 
-![Campaign & Revenue Analysis](Campaign_Revenue_Analysis.png)
+![Campaign & Revenue Analysis](Dashboard_Screenshots/Campaign_Revenue_Analysis.png)
 
 ---
 
 ## 6️⃣ Customer Segment Details
 
-Detailed customer-level analysis.
+A detailed customer-level report for business users.
 
-Includes:
-
+**Includes**
 - Customer Information
 - Subscription Details
 - Revenue at Risk
 - Revenue Lost by Plan
 
-**Dashboard**
+### Dashboard Preview
 
-![Customer Segment Details](Customer_Segment_Details.png)
+![Customer Segment Details](Dashboard_Screenshots/Customer_Segment_Details.png)
 
 ---
 
@@ -180,7 +194,7 @@ Includes:
 - Churn Rate
 - Retention Rate
 - Revenue at Risk
-- ARPU
+- ARPU (Average Revenue Per User)
 - Average Customer Age
 - Average Customer Tenure
 - First Contact Resolution (FCR)
@@ -188,43 +202,58 @@ Includes:
 - Complaint Count
 - Campaign Success Rate
 - Monthly Recurring Revenue (MRR)
-- Network Downtime
-- Dropped Call Rate
+- Average Download Speed
+- Average Signal Strength
+- Average Dropped Call Rate
+- Average Network Downtime
 
 ---
 
 # ⭐ Bonus Analysis
 
-A **Cohort Retention Analysis** was also performed to measure customer retention after:
+A **Cohort Retention Analysis** was performed by grouping customers based on their acquisition month and calculating the percentage of customers who remained active after:
 
 - 3 Months
 - 6 Months
 - 12 Months
 
-using acquisition cohorts created from customer acquisition dates.
+This analysis provides additional insights into long-term customer retention patterns across different acquisition cohorts.
 
 ---
 
-# 📌 Business Insights
+# 📄 Management Summary Report
 
-- Premium customers contribute the highest revenue loss due to churn.
-- Retention campaigns achieved an overall success rate of more than 82%.
-- Service quality and connection-related complaints require the longest resolution time.
-- Regions with higher dropped-call rates generally experience higher customer churn.
-- Faster complaint resolution and targeted retention campaigns can significantly reduce revenue loss.
-
----
-
-# 📄 Management Report
-
-A business-friendly management report was prepared summarizing:
+A business-focused management report was prepared for the **Chief Customer Officer (CCO)** summarizing:
 
 - Executive Summary
-- Top Findings
-- Risks
-- Opportunities
+- Top Business Findings
+- Risks Identified
+- Business Opportunities
 - Recommendations
 
+---
+
+# 💡 Key Business Insights
+
+- Premium customers contribute the highest revenue loss due to churn.
+- Retention campaigns achieved a success rate of over 82%, demonstrating effective customer engagement.
+- Service Quality and Connection-related complaints have the longest average resolution time.
+- Regions with higher dropped-call rates generally experience higher customer churn.
+- Improving complaint resolution time and network performance can significantly reduce churn and protect recurring revenue.
+
+---
+
+# 👨‍💻 Author
+
+**Navdeep Khandelwal**
+
+**LinkedIn:** https://www.linkedin.com/in/navdeep-khandelwal/
+
+**GitHub:** https://github.com/navdeepkhandelwal
+
+---
+
+⭐ If you found this project helpful, consider giving it a star.
 ---
 
 # 👨‍💻 Author
